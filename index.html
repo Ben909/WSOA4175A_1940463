@@ -2,39 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomePage">
+    <link rel="stylesheet" href="./CSS/style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Js/menu.js"></script>
     <title>HomePage</title>
 </head>
-<body>
+<body onload="generateNav()">
     
-    <main>
-        <article class="centre">
-    
-            <h1 class="titlemid">About Infographics</h1>
-    
-                <p> The purpose of this website is to express the reasons why data visualization is so important.
-                    It is much easier for people to understand data when they see it visually, then it is when we see it as a table of numbers.
-                    A well-crafted and thoughtful visualization of data allows people grasp information in a way that is more dynamic than most other forms of research.
-                    More than any other tool, it increases the speed at which we gain insight about data because it requires us to use both the logical
-                    and creative side of the human brain. Each type of visualization might also be used in a variety of research fields.
-                    Through this form of data, we are able to identify trends and outliners in much greater detail. It enables us to have conversations
-                    about the information we are presented. This makes it easier and faster for us get certain answers rather than having to write queries on a database. 
+<header class="wrap" id="nav-wrap1">
+        <!-- <nav class="navbar">
+            <img class="mylogo" src="images/logovisual-min.png">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog/index.html">Theory Blogs</a></li>
+                <li><a href="Internet Art/index.html">Internet Art</a></li>
+                <li><a href="wireframes/index.html">Wireframes</a></li>
+            </ul>
+        </nav> -->
+  
+</header>
 
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                    and so on and so on and so on and so onand so on and so onand so on and so onand so on and so onand so on and so onand so on and so on
-                </p>
+<main>
+    <article class="centre">
+
+        <h1 class="titlemid">About the Charts</h1>
+
+        <div class="artworks">
+            <h2>Provincial Covid-19 Recoveries</h2>
+            <div id="bar-3Dcontainer"></div>
+            <p> As per the assignment brief, we are required to produce some form of data visualization using an existing API.
+                The graphs below is facilitated by the open source library, <a href="https://d3js.org/" target="_blank">D3.js</a> to illustrate the statistical distribution of recovered
+                Covid-19 patients across all nine provinces of South-Africa. The concept for the chart is inspired by the times we life in.
+                Amidst the pandemic, the current change in climate proves that more patients have recovered due to a lower chance for the
+                virus to spread in warm weather temperatures. I therefore decided to create a chart which indicates which provinces had the 
+                highest number of total recoveries. My idea was that this information could be used inform communities of strategies to combat the virus or 
+                mitigate risk factors.For the purpose of this visualization, there are no databases where I can store this 
+                information or keep it updated. Further development of this chart must be conducted within these considerations.  </p>
+
+            <h2>Circle Diagram</h2>    
+            <div id="Pie-3Dcontainer"></div>
+            <p>For my circle diagram, I incorporated the same dataset as in the previous bar chart to create a new visualization. My goal with the development
+               of this chart is to express how alternative methods can be used to visualize datasets. This gives an alternative perspective to the end-user about
+               the information they are presented.Although not fully operational, my experimentation with new visualizations revealed the importance of data
+               science. If we are to break down most visualizations, we find that most are made up of shapes, colors and sizable dimensions. It is 
+               important to note how influential these elements are to make informative decisions and how this impacts the visualization of information. 
+               Coherence with regard to the building blocks of visualizations gives it the ability to convey a story more efficiently.    
+            </p>
+
+            <h2>Circle Diagram</h2>    
+            <div id="Pie-3Dcontainer"></div>
+            <p>For my circle diagram, I incorporated the same dataset as in the previous bar chart to create a new visualization. My goal with the development
+               of this chart is to express how alternative methods can be used to visualize datasets. This gives an alternative perspective to the end-user about
+               the information they are presented.Although not fully operational, my experimentation with new visualizations revealed the importance of data
+               science. If we are to break down most visualizations, we find that most are made up of shapes, colors and sizable dimensions. It is 
+               important to note how influential these elements are to make informative decisions and how this impacts the visualization of information. 
+               Coherence with regard to the building blocks of visualizations gives it the ability to convey a story more efficiently.    
+            </p>
+
+            
+          </div>
+
+          <div class="lowerpic">
+            <img src="./images/homepage-min.png" alt="graph">
+        </div>
+          
+            
+    </article> 
+
+</main>
+
+ <!--<main>
+    <article class="centre">
+
+        <h1 class="titlemid">About Infographics</h1>
+
+            <p> The purpose of this website is to express the reasons why data visualization is so important.
+                It is much easier for people to understand data when they see it visually, then it is when we see it as a table of numbers.
+                A well-crafted and thoughtful visualization of data allows people grasp information in a way that is more dynamic than most other forms of research.
+                More than any other tool, it increases the speed at which we gain insight about data because it requires us to use both the logical
+                and creative side of the human brain. Each type of visualization might also be used in a variety of research fields.
+                Through this form of data, we are able to identify trends and outliners in much greater detail. It enables us to have conversations
+                about the information we are presented. This makes it easier and faster for us get certain answers rather than having to write queries on a database. 
+            </p>
+
+            <div class="lowerpic">
+                <img src="./images/homepage-min.png" alt="graph">
+            </div>
+
+    </article>
     
-        </article>
-        
-        
-    
-    </main>
+</main>-->
+
 
 </body>
 </html>
