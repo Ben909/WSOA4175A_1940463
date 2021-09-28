@@ -3,9 +3,10 @@
     :root {
         --gradient: linear-gradient(0deg, #8f6d34,#ac833e,#8f6d34,#ac833e);
         /*--gradientwo: linear-gradient(45deg, #8a7b4a, #b19e5f,#8a7b4a,#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f);*/
-        --gradienthree: linear-gradient(45deg, #658866, #3d17e6,#411721/*,#267a32,#c2c50a,#481be9*/);
+        --gradienthree: linear-gradient(45deg, rgba(209, 180, 117, 0.925), rgba(209, 180, 117, 0.925),rgba(209, 180, 117, 0.925)/*,#267a32,#c2c50a,#481be9*/);
         
-        --gradientX: linear-gradient(-45deg, #9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a);
+        --gradientX: linear-gradient(-45deg, #ee966d, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a);
+        --gradientfour: linear-gradient(45deg, #b68929, #b68929,#b68929/*,#267a32,#c2c50a,#481be9*/);
         /*--gradientX: linear-gradient(-45deg, #cfb183, #7e6b4f,#cfb183,#7e6b4f,#cfb183,#7e6b4f,#cfb183, #7e6b4f,#cfb183,#7e6b4f,#cfb183,#7e6b4f,#cfb183, #7e6b4f);*/
     }
     /*(0deg, #9e7a3c,#d6a654,#917f5e,#d6a654,#9e7a3c,#d6a654);*/
@@ -15,8 +16,8 @@
         font-family: sans-serif;
         background: #ddd;
         background-image: var(--gradientX);
-        background-size: 200%;
-        animation: bg-animation 60s infinite alternate;
+        background-size: 350%;
+        animation: bg-animation 100s infinite alternate;
     }
 
     @keyframes bg-animation{
@@ -45,6 +46,60 @@
             background-position: right;
         }
     }
+    
+
+
+    
+
+
+
+
+
+
+
+    .contain{
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        place-items: center;
+        margin: 0;
+
+        margin: auto;
+        /*background: #5CA2C6;*/
+        width: 40vh;
+        height: 40vh;
+        background: repeating-linear-gradient(45deg,rgba(255, 0, 0, 0.5),rgba(128, 0, 128, 0.5) 50px, rgba(0, 128, 0, 0.5) 60px);
+
+        /*height: 50vh;
+        width: 50vh;
+        display: grid;
+        place-items: center;
+        margin: 0;*/
+
+        /*width: 40vh;
+        height: 40vh;
+        background-image: repeating-linear-gradient(45deg,rgb(139, 37, 37), rgba(226, 193, 44, 0.712) 10px, rgb(94, 94, 206) 10px, rgb(27, 27, 70) 20px);
+        */
+    }
+
+    .art{
+        width: 200px;
+        height: 200px;
+        margin-left: 10vh;
+        margin-bottom: 10vh;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        /*margin: 0 auto;*/
+        background-image: repeating-radial-gradient(farthest-corner at
+        100px 100px, rgba(255, 140, 0, 0.6) 30%, rgba(255, 255, 0, 0.6) 60%);
+    }
+
+
+
+
+
+
 
     .centre{
         margin: auto;
@@ -54,7 +109,7 @@
         /*background-image: var(--gradient);*/
         max-width: 950px;
         background-size: 200%;
-        animation: bg-animation 120s infinite alternate;
+        /*animation: bg-animation 120s infinite alternate;*/
     }
 
     .wrap{
@@ -102,13 +157,17 @@
     }
     .navbar ul{
         float: right;
-        margin-right: 27rem;
+        margin-right: 21rem;
+        border: 5px solid rgb(109, 46, 9);
+        margin-top: 0vh;
+        height: 12vh;
+        width: 112.3vh;
     }
     .navbar ul li{
         list-style: none;
-        margin: 0px 8px;
+        margin: 0px 22px;
         display: inline-block;
-        line-height: 80px;
+        line-height: 105px;
     }
     .navbar ul li a{
         text-decoration: none;
@@ -118,11 +177,36 @@
         transition: .35s;
         font-family: Arial, Helvetica, sans-serif; 
         font-weight: bolder;  
+
+        border: 2px solid rgb(109, 46, 9);
+        border-radius: 5px;
+        background-image: var(--gradientfour);
+        background-size: 300%;
     }
+
+
+
     .navbar ul li a:hover{
+        /*background: #95BF74;*/
+        border: 0;
+        background-size: 300%;
+        background-position: left;
+        transition: background-position 1s;
+        background-position: right;
+        border-radius: 5px;
+        background-image: var(--gradienthree);
+        border: 2px solid rgb(109, 46, 9);
+    }
+
+
+    /*.navbar ul li a:hover{
         background: #95BF74;
         border-radius: 5px;
-    }
+    }*/
+
+
+
+
     .reference a{
         text-decoration: none;
         color:black;
