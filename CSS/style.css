@@ -2,19 +2,14 @@
 
     :root {
         --gradient: linear-gradient(0deg, #8f6d34,#ac833e,#8f6d34,#ac833e);
-        /*--gradientwo: linear-gradient(45deg, #8a7b4a, #b19e5f,#8a7b4a,#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f,#8a7b4a#8a7b4a,#b19e5f);*/
-        --gradienthree: linear-gradient(45deg, rgba(209, 180, 117, 0.925), rgba(209, 180, 117, 0.925),rgba(209, 180, 117, 0.925)/*,#267a32,#c2c50a,#481be9*/);
-        
         --gradientX: linear-gradient(-45deg, #ee966d, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a);
-        --gradientfour: linear-gradient(45deg, #b68929, #b68929,#b68929/*,#267a32,#c2c50a,#481be9*/);
-        /*--gradientX: linear-gradient(-45deg, #cfb183, #7e6b4f,#cfb183,#7e6b4f,#cfb183,#7e6b4f,#cfb183, #7e6b4f,#cfb183,#7e6b4f,#cfb183,#7e6b4f,#cfb183, #7e6b4f);*/
+        --gradienthree: linear-gradient(45deg, rgba(209, 180, 117, 0.925), rgba(209, 180, 117, 0.925),rgba(209, 180, 117, 0.925));
+        --gradientfour: linear-gradient(45deg, #b68929, #b68929,#b68929);
     }
-    /*(0deg, #9e7a3c,#d6a654,#917f5e,#d6a654,#9e7a3c,#d6a654);*/
     body{
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background: #ddd;
         background-image: var(--gradientX);
         background-size: 350%;
         animation: bg-animation 100s infinite alternate;
@@ -28,7 +23,6 @@
             background-position: right;
         }
     }
-
     @keyframes bg-animationtwo{
         0%{
             background-position: left;
@@ -37,7 +31,6 @@
             background-position: right;
         }
     }
-
     @keyframes bg-animationthree{
         0%{
             background-position: left;
@@ -46,72 +39,73 @@
             background-position: right;
         }
     }
-    
+    @keyframes myanimation {
+        0%{background-color: yellow;}
+        25%{background-color: green;}
+        50%{background-color: red;}
+        75%{background-color: blue;}
+        100%{background-color: blueviolet;}
+    }
 
 
-    
-
-
-
-
-
-
-
+    /* ART WORK */
     .contain{
+        margin: auto;
+        width: 40vh;
+        height: 40vh;
+        border-radius: 10%;
         display: flex;
         justify-content: center;
         position: relative;
-
         place-items: center;
-        margin: 0;
-
-        margin: auto;
-        /*background: #5CA2C6;*/
-        width: 40vh;
-        height: 40vh;
-        background: repeating-linear-gradient(45deg,rgba(255, 0, 0, 0.5),rgba(128, 0, 128, 0.5) 50px, rgba(0, 128, 0, 0.5) 60px);
-
-        /*height: 50vh;
-        width: 50vh;
-        display: grid;
-        place-items: center;
-        margin: 0;*/
-
-        /*width: 40vh;
-        height: 40vh;
-        background-image: repeating-linear-gradient(45deg,rgb(139, 37, 37), rgba(226, 193, 44, 0.712) 10px, rgb(94, 94, 206) 10px, rgb(27, 27, 70) 20px);
-        */
+        box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+        animation: myanimation 15s infinite alternate;
+        background: repeating-linear-gradient(45deg,rgba(255, 0, 0, 0.8),rgba(128, 0, 128, 0.8) 50px, rgba(0, 128, 0, 0.8) 60px);
     }
-
     .art{
+        box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.753) ;
         width: 200px;
         height: 200px;
         margin-left: 10vh;
         margin-bottom: 10vh;
-        border: 1px solid lightgray;
-        border-radius: 50%;
-        /*margin: 0 auto;*/
+        border-radius: 10%;
         background-image: repeating-radial-gradient(farthest-corner at
         100px 100px, rgba(255, 140, 0, 0.6) 30%, rgba(255, 255, 0, 0.6) 60%);
     }
+    .contain2{
+        margin: auto;
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        place-items: center;
+        box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+        animation: myanimation 15s infinite alternate;
+        background: repeating-linear-gradient(45deg,rgba(21, 255, 0, 0.8), rgba(128, 77, 0, 0.8) 50px, rgba(2, 0, 128, 0.8) 60px);
+    }
+    .art2{
+        box-shadow: -20px -20px 20px 0px rgba(0, 0, 0, 0.753) ;
+        width: 200px;
+        height: 200px;
 
+        border-radius: 30%;
+        background-image: repeating-radial-gradient(farthest-corner at
+        100px 100px, rgba(0, 38, 255, 0.6) 30%, rgba(0, 247, 255, 0.6) 60% );
+    }
 
-
-
-
-
-
+    /* MID SECTION */
     .centre{
         margin: auto;
         padding: 2em;
-        /*background: rgba(158, 127, 80, 0.897);*/
         background: rgba(209, 180, 117, 0.925);
-        /*background-image: var(--gradient);*/
         max-width: 950px;
         background-size: 200%;
-        /*animation: bg-animation 120s infinite alternate;*/
+        box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
     }
 
+    /* HEADER SECTION */
     .wrap{
         height: 110px;
         width: 100%;
@@ -120,41 +114,16 @@
         background-size: 200%;
         animation: bg-animationthree 120s infinite alternate;
     }
-
-    .titlemid{
-        text-align: center;
-        font-size: 30px;
-    }
-    
-    .artworks{
-        text-align: center;
-    }
-
-    .lowerpic{
-        text-align: center;
-    }
-
-    .centrepic img{
-        padding: 10px;
-        width: 350px;
-        height: 350px;
-    }
-    .centre p{
-        font-size: 18px;
-        line-height: 19pt;
-        text-align: justify;
-    }
-
     .mylogo{
         width: 21em;
-        height: 110px;
+        height: 113px;
         padding: 0px 0px;
-        
     }
     .navbar ul{
         float: right;
         margin-right: 21rem;
         border: 5px solid rgb(109, 46, 9);
+        border-radius: 3px;
         margin-top: 0vh;
         height: 12vh;
         width: 112.3vh;
@@ -174,23 +143,36 @@
         font-family: Arial, Helvetica, sans-serif; 
         font-weight: bolder;  
 
-        border: 2px solid rgb(109, 46, 9);
-        border-radius: 5px;
+        border: 3px solid rgb(109, 46, 9);
+        border-radius: 10px;
         background-image: var(--gradientfour);
         background-size: 300%;
     }
-
-
-
     .navbar ul li a:hover{
-        border: 0;
         background-size: 300%;
         background-position: left;
         transition: background-position 1s;
         background-position: right;
-        border-radius: 5px;
+        border-radius: 10px;
         background-image: var(--gradienthree);
-        border: 2px solid rgb(109, 46, 9);
+        border: 3px solid rgb(109, 46, 9);
+    }
+
+    /*MAIN TEXT CONTENT*/
+    .titlemid{
+        text-align: center;
+        font-size: 30px;
+    }
+    .artworks{
+        text-align: center;
+    }
+    .lowerpic{
+        text-align: center;
+    }
+    .centre p{
+        font-size: 18px;
+        line-height: 19pt;
+        text-align: justify;
     }
     .reference a{
         text-decoration: none;
@@ -200,6 +182,8 @@
         transition: .35s;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    /*BLOG SECTION*/
     .blognav ul li{
         list-style: none;
     }
@@ -215,9 +199,6 @@
         background: rgb(3, 192, 192);
         border-radius: 5px;
     }
-
-
-
     button{
         margin-left: -2px;
         background: #b68929;
@@ -228,7 +209,6 @@
         border: 2px solid rgb(109, 46, 9);
         font-size: 18px;
         border-radius: 4px;
-        /*transition: .5s;*/
         overflow: hidden;
     }
     button :focus{
@@ -237,10 +217,7 @@
     button:hover{
         background: rgba(209, 180, 117, 0.925);
         cursor: pointer;
-        /*color: rgb(255, 255, 255);*/
     }
-
-
     .styleguide{
         margin: auto;
         padding: 100px;
@@ -251,117 +228,185 @@
         height: 350px;
     }
 
-    
-
-    
     }
-    
-    /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
-    
-    /* todo: add styles */
-    .vertical-grid{
-        stroke:#ccc;
-        
-      }
-      
-      .ordinate-text{
-        font-size:10px;
-        transform:translateY(10px);
-      }
-      
-      div.tooltip {
-        position: absolute;
-        text-align: center;
-        width: auto;
-        height: auto;
-        padding: 2px;
-        font: 12px sans-serif;
-        background: lightsteelblue;
-        border: 0px;
-        border-radius: 8px;
-        pointer-events: none;
-        opacity:0;
-        padding:5px;
-      }
-      
-      .right-align{
-        position:absolute;
-        right:100px;
-        
-      }
-      .box,
-      .label{
-          display:inline-block;
-      }
-      
-      .box{
-        width:10px;
-        height:10px;
-        margin:0px 10px;
-      }
-    
-    /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
-    
-    
+
+
     
     @media only screen and (max-width: 1000px){
     
+        :root {
+            --gradient: linear-gradient(0deg, #8f6d34,#ac833e,#8f6d34,#ac833e);
+            --gradientX: linear-gradient(-45deg, #ee966d, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a);
+            --gradienthree: linear-gradient(45deg, rgba(209, 180, 117, 0.925), rgba(209, 180, 117, 0.925),rgba(209, 180, 117, 0.925));
+            --gradientfour: linear-gradient(45deg, #b68929, #b68929,#b68929);
+        }
         body{
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background: #659B5E;
-        
+            background-image: var(--gradientX);
+            background-size: 350%;
+            animation: bg-animation 100s infinite alternate;
         }
+    
+        @keyframes bg-animation{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes bg-animationtwo{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes bg-animationthree{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes myanimation {
+            0%{background-color: yellow;}
+            25%{background-color: green;}
+            50%{background-color: red;}
+            75%{background-color: blue;}
+            100%{background-color: blueviolet;}
+        }
+    
+    
+        /* ART WORK */
+        .contain{
+            margin: auto;
+            width: 40vh;
+            height: 40vh;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            place-items: center;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+            animation: myanimation 15s infinite alternate;
+            background: repeating-linear-gradient(45deg,rgba(255, 0, 0, 0.8),rgba(128, 0, 128, 0.8) 50px, rgba(0, 128, 0, 0.8) 60px);
+        }
+        .art{
+            box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.753) ;
+            width: 200px;
+            height: 200px;
+            margin-left: 10vh;
+            margin-bottom: 10vh;
+            border-radius: 10%;
+            background-image: repeating-radial-gradient(farthest-corner at
+            100px 100px, rgba(255, 140, 0, 0.6) 30%, rgba(255, 255, 0, 0.6) 60%);
+        }
+        .contain2{
+            margin: auto;
+            width: 40vh;
+            height: 40vh;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            place-items: center;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+            animation: myanimation 15s infinite alternate;
+            background: repeating-linear-gradient(45deg,rgba(21, 255, 0, 0.8), rgba(128, 77, 0, 0.8) 50px, rgba(2, 0, 128, 0.8) 60px);
+        }
+        .art2{
+            box-shadow: -20px -20px 20px 0px rgba(0, 0, 0, 0.753) ;
+            width: 200px;
+            height: 200px;
+    
+            border-radius: 30%;
+            background-image: repeating-radial-gradient(farthest-corner at
+            100px 100px, rgba(0, 38, 255, 0.6) 30%, rgba(0, 247, 255, 0.6) 60% );
+        }
+    
+        /* MID SECTION */
+        .centre{
+            margin: auto;
+            padding: 2em;
+            background: rgba(209, 180, 117, 0.925);
+            max-width: 950px;
+            background-size: 200%;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+        }
+    
+        /* HEADER SECTION */
+        .wrap{
+            height: 110px;
+            width: 100%;
+            background: #999484;
+            background-image: var(--gradient);
+            background-size: 200%;
+            animation: bg-animationthree 120s infinite alternate;
+        }
+        .mylogo{
+            width: 21em;
+            height: 113px;
+            padding: 0px 0px;
+        }
+        .navbar ul{
+            float: right;
+            margin-right: 21rem;
+            border: 5px solid rgb(109, 46, 9);
+            border-radius: 3px;
+            margin-top: 0vh;
+            height: 12vh;
+            width: 112.3vh;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0px 22px;
+            display: inline-block;
+            line-height: 105px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            padding: 6px 13px;
+            font-size: 2rem;
+            transition: .35s;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bolder;  
+    
+            border: 3px solid rgb(109, 46, 9);
+            border-radius: 10px;
+            background-image: var(--gradientfour);
+            background-size: 300%;
+        }
+        .navbar ul li a:hover{
+            background-size: 300%;
+            background-position: left;
+            transition: background-position 1s;
+            background-position: right;
+            border-radius: 10px;
+            background-image: var(--gradienthree);
+            border: 3px solid rgb(109, 46, 9);
+        }
+    
+        /*MAIN TEXT CONTENT*/
         .titlemid{
             text-align: center;
             font-size: 30px;
         }
-        .centre{
-            margin: auto;
-            padding: 2em;
-            background: #95BF74;
-            max-width: 950px;
+        .artworks{
+            text-align: center;
+        }
+        .lowerpic{
+            text-align: center;
         }
         .centre p{
             font-size: 18px;
             line-height: 19pt;
             text-align: justify;
-        }
-        .wrap{
-            height: 110px;
-            width: 100%;
-            background: #608548;
-            text-align: center;
-        }
-        .mylogo{
-            width: 100px;
-            height: 90px;
-            padding: 10px 0px;
-            
-        }
-        .navbar ul{
-            display: inline-block;
-        
-        }
-        .navbar ul li{
-            list-style: none;
-            margin: 0px 8px;
-            display: inline-block;
-            line-height: 80px;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color:black;
-            padding: 4px 8px;
-            font-size: 1.3rem;
-            transition: .35s;
-            font-family: Arial, Helvetica, sans-serif; 
-            font-weight: bolder;  
-        }
-        .navbar ul li a:hover{
-            background: #95BF74;
-            border-radius: 5px;
         }
         .reference a{
             text-decoration: none;
@@ -371,6 +416,8 @@
             transition: .35s;
             font-family: Arial, Helvetica, sans-serif;
         }
+    
+        /*BLOG SECTION*/
         .blognav ul li{
             list-style: none;
         }
@@ -387,21 +434,22 @@
             border-radius: 5px;
         }
         button{
-            background: none;
+            margin-left: -2px;
+            background: #b68929;
+    
             color: rgb(3, 0, 44);
             width: 140px;
             height: 40px;
-            border: 3px solid #338033;
+            border: 2px solid rgb(109, 46, 9);
             font-size: 18px;
             border-radius: 4px;
-            transition: .5s;
             overflow: hidden;
         }
         button :focus{
             outline: none;
         }
         button:hover{
-            background: #338033;
+            background: rgba(209, 180, 117, 0.925);
             cursor: pointer;
         }
         .styleguide{
@@ -413,77 +461,186 @@
             width: 350px;
             height: 350px;
         }
-        .chart-container{
-            width: 50vw;
-            height: 25vw;
-            margin: auto;
-        }
-        canvas{
-            border: 3px solid rgb(15, 151, 67);
-        }
     
-        } 
+        }
         
         
     
     @media only screen and (max-width: 800px){
     
+        :root {
+            --gradient: linear-gradient(0deg, #8f6d34,#ac833e,#8f6d34,#ac833e);
+            --gradientX: linear-gradient(-45deg, #ee966d, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a,#9e7a3c,#bd934a,#9e7a3c,#bd934a,#9e7a3c, #bd934a);
+            --gradienthree: linear-gradient(45deg, rgba(209, 180, 117, 0.925), rgba(209, 180, 117, 0.925),rgba(209, 180, 117, 0.925));
+            --gradientfour: linear-gradient(45deg, #b68929, #b68929,#b68929);
+        }
         body{
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background: #659B5E;
-        
+            background-image: var(--gradientX);
+            background-size: 350%;
+            animation: bg-animation 100s infinite alternate;
         }
+    
+        @keyframes bg-animation{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes bg-animationtwo{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes bg-animationthree{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+        @keyframes myanimation {
+            0%{background-color: yellow;}
+            25%{background-color: green;}
+            50%{background-color: red;}
+            75%{background-color: blue;}
+            100%{background-color: blueviolet;}
+        }
+    
+    
+        /* ART WORK */
+        .contain{
+            margin: auto;
+            width: 40vh;
+            height: 40vh;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            place-items: center;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+            animation: myanimation 15s infinite alternate;
+            background: repeating-linear-gradient(45deg,rgba(255, 0, 0, 0.8),rgba(128, 0, 128, 0.8) 50px, rgba(0, 128, 0, 0.8) 60px);
+        }
+        .art{
+            box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.753) ;
+            width: 200px;
+            height: 200px;
+            margin-left: 10vh;
+            margin-bottom: 10vh;
+            border-radius: 10%;
+            background-image: repeating-radial-gradient(farthest-corner at
+            100px 100px, rgba(255, 140, 0, 0.6) 30%, rgba(255, 255, 0, 0.6) 60%);
+        }
+        .contain2{
+            margin: auto;
+            width: 40vh;
+            height: 40vh;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            place-items: center;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+            animation: myanimation 15s infinite alternate;
+            background: repeating-linear-gradient(45deg,rgba(21, 255, 0, 0.8), rgba(128, 77, 0, 0.8) 50px, rgba(2, 0, 128, 0.8) 60px);
+        }
+        .art2{
+            box-shadow: -20px -20px 20px 0px rgba(0, 0, 0, 0.753) ;
+            width: 200px;
+            height: 200px;
+    
+            border-radius: 30%;
+            background-image: repeating-radial-gradient(farthest-corner at
+            100px 100px, rgba(0, 38, 255, 0.6) 30%, rgba(0, 247, 255, 0.6) 60% );
+        }
+    
+        /* MID SECTION */
+        .centre{
+            margin: auto;
+            padding: 2em;
+            background: rgba(209, 180, 117, 0.925);
+            max-width: 950px;
+            background-size: 200%;
+            box-shadow: inset 0 0 20px 3px rgb(196, 104, 17);
+        }
+    
+        /* HEADER SECTION */
+        .wrap{
+            height: 110px;
+            width: 100%;
+            background: #999484;
+            background-image: var(--gradient);
+            background-size: 200%;
+            animation: bg-animationthree 120s infinite alternate;
+        }
+        .mylogo{
+            width: 21em;
+            height: 113px;
+            padding: 0px 0px;
+        }
+        .navbar ul{
+            float: right;
+            margin-right: 21rem;
+            border: 5px solid rgb(109, 46, 9);
+            border-radius: 3px;
+            margin-top: 0vh;
+            height: 12vh;
+            width: 112.3vh;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0px 22px;
+            display: inline-block;
+            line-height: 105px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            padding: 6px 13px;
+            font-size: 2rem;
+            transition: .35s;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bolder;  
+    
+            border: 3px solid rgb(109, 46, 9);
+            border-radius: 10px;
+            background-image: var(--gradientfour);
+            background-size: 300%;
+        }
+        .navbar ul li a:hover{
+            background-size: 300%;
+            background-position: left;
+            transition: background-position 1s;
+            background-position: right;
+            border-radius: 10px;
+            background-image: var(--gradienthree);
+            border: 3px solid rgb(109, 46, 9);
+        }
+    
+        /*MAIN TEXT CONTENT*/
         .titlemid{
             text-align: center;
             font-size: 30px;
         }
-        .centre{
-            margin: auto;
-            padding: 2em;
-            background: #95BF74;
-            max-width: 950px;
+        .artworks{
+            text-align: center;
+        }
+        .lowerpic{
+            text-align: center;
         }
         .centre p{
             font-size: 18px;
             line-height: 19pt;
             text-align: justify;
-        }
-        .wrap{
-            height: 110px;
-            width: 100%;
-            background: #608548;
-            text-align: center;
-        }
-        .mylogo{
-            width: 100px;
-            height: 90px;
-            padding: 10px 0px;
-            
-        }
-        .navbar ul{
-            display: inline-block;
-        
-        }
-        .navbar ul li{
-            list-style: none;
-            margin: 0px 8px;
-            display: inline-block;
-            line-height: 80px;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color:black;
-            padding: 4px 8px;
-            font-size: 1.3rem;
-            transition: .35s;
-            font-family: Arial, Helvetica, sans-serif; 
-            font-weight: bolder;  
-        }
-        .navbar ul li a:hover{
-            background: #95BF74;
-            border-radius: 5px;
         }
         .reference a{
             text-decoration: none;
@@ -493,6 +650,8 @@
             transition: .35s;
             font-family: Arial, Helvetica, sans-serif;
         }
+    
+        /*BLOG SECTION*/
         .blognav ul li{
             list-style: none;
         }
@@ -509,21 +668,22 @@
             border-radius: 5px;
         }
         button{
-            background: none;
+            margin-left: -2px;
+            background: #b68929;
+    
             color: rgb(3, 0, 44);
             width: 140px;
             height: 40px;
-            border: 3px solid #338033;
+            border: 2px solid rgb(109, 46, 9);
             font-size: 18px;
             border-radius: 4px;
-            transition: .5s;
             overflow: hidden;
         }
         button :focus{
             outline: none;
         }
         button:hover{
-            background: #338033;
+            background: rgba(209, 180, 117, 0.925);
             cursor: pointer;
         }
         .styleguide{
@@ -535,16 +695,8 @@
             width: 350px;
             height: 350px;
         }
-        .chart-container{
-            width: 50vw;
-            height: 25vw;
-            margin: auto;
-        }
-        canvas{
-            border: 3px solid rgb(15, 151, 67);
-        }
     
-        } 
+        }
         
     
         
